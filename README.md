@@ -18,15 +18,37 @@ Once installed, import the package and use it like you would any other component
 import { Button } from '@sandypockets/components'
 
 export default function MyComponent() {
+  
+  function handleClick() {
+    // handle things
+  }
+  
   return (
     <div>
-      <Button type="primary">
+      <Button theme="primary">
         Click me
       </Button>
     </div>
   )
 }
 ```
+
+<details>
+<summary>View button props</summary>
+
+| Attribute  | Prop Name          | Type     | Required | default   |
+|------------|--------------------|----------|----------|-----------|
+| aria-label | accessibilityLabel | string   | no       | null      |
+| className  | theme              | string   | no       | "primary" |
+| disabled   | disabled           | boolean  | no       | false     |
+| style      | inlineStyle        | object   | no       | null      |
+| type       | type               | string   | no       | "button"  |
+| onClick    | onClickHandler     | function | no       | null      |
+| onSubmit   | onSubmitHandler    | function | no       | null      |
+
+</details>
+
+
 
 ## Current components
 - Button

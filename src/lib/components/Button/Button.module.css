@@ -27,3 +27,59 @@
 .primary:focus-visible {
   box-shadow: 0 0 0 2px #4338ca, 0 0 0 2px inset;
 }
+
+.secondary {
+  background-color: #595f63;
+  color: #fff;
+}
+.secondary:hover {
+  background-color: #404548;
+}
+.secondary:focus {
+  box-shadow: 0 0 0 2px #404548, 0 0 0 2px inset;
+}
+.secondary:focus-visible {
+  box-shadow: 0 0 0 2px #404548, 0 0 0 2px inset;
+}
+
+.success {
+  background-color: #059669;
+  color: #fff;
+}
+.success:hover {
+  background-color: #047857;
+}
+.success:focus {
+  box-shadow: 0 0 0 2px #047857, 0 0 0 2px inset;
+}
+.success:focus-visible {
+  box-shadow: 0 0 0 2px #047857, 0 0 0 2px inset;
+}
+
+.danger {
+  background-color: #ef4444;
+  color: #fff;
+}
+.danger:hover {
+  background-color: #dc2626;
+}
+.danger:focus {
+  box-shadow: 0 0 0 2px #dc2626, 0 0 0 2px inset;
+}
+.danger:focus-visible {
+  box-shadow: 0 0 0 2px #dc2626, 0 0 0 2px inset;
+}
+
+.warning {
+  background-color: #f7c244;
+  color: #fff;
+}
+.warning:hover {
+  background-color: #bb9232;
+}
+.warning:focus {
+  box-shadow: 0 0 0 2px #bb9232, 0 0 0 2px inset;
+}
+.warning:focus-visible {
+  box-shadow: 0 0 0 2px #bb9232, 0 0 0 2px inset;
+}

@@ -1,10 +1,28 @@
 import React from 'react';
 import styles from './Button.module.css';
 
-export default function Button({ inlineStyle, children, type }) {
+export default function Button({
+  type = 'button',
+  inlineStyle = null,
+  theme = 'primary',
+  disabled = false,
+  accessibilityLabel = '',
+  loading = false,
+  children,
+  onClickHandler,
+  onSubmitHandler,
+}) {
   return (
-    <button style={inlineStyle} className={`${styles.button} ${styles[type]}`}>
-      {children}
+    <button
+      aria-label={accessibilityLabel}
+      className={`${styles.button} ${styles[theme]}`}
+      disabled={disabled}
+      style={inlineStyle}
+      type={type}
+      onClick={onClickHandler}
+      onSubmit={onSubmitHandler}
+    >
+      {loading ? 'Loading...' : children}
     </button>
   );
 }
