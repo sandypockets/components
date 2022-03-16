@@ -3,12 +3,12 @@ import styles from './Button.module.css';
 
 export default function Button({
   type = 'button',
-  inlineStyle = null,
+  inlineStyle = {},
   theme = 'primary',
   disabled = false,
   accessibilityLabel = '',
   loading = false,
-  children,
+  children = 'Click me',
   onClickHandler,
   onSubmitHandler,
 }) {
