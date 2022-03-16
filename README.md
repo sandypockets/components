@@ -19,10 +19,6 @@ import { Button } from '@sandypockets/components'
 
 export default function MyComponent() {
   
-  function handleClick() {
-    // handle things
-  }
-  
   return (
     <div>
       <Button theme="primary">

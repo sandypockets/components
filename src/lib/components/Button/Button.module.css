@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+:root {
+  --primary: #4f46e5;
+  --primary-dark: #4338ca;
+  --secondary: #595f63;
+  --secondary-dark: #404548;
+  --success: #059669;
+  --success-dark: #047857;
+  --danger: #ef4444;
+  --danger-dark: #dc2626;
+  --warning: #f7c244;
+  --warning-dark: #bb9232;
+  --text-color: #fff;
+}
+
 .button {
   padding: 5px 15px;
   border-radius: 5px;
@@ -15,71 +29,71 @@
 }
 
 .primary {
-  background-color: #4f46e5;
-  color: #fff;
+  background-color: var(--primary);
+  color: var(--text-color);
 }
 .primary:hover {
-  background-color: #4338ca;
+  background-color: var(--primary-dark);
 }
 .primary:focus {
-  box-shadow: 0 0 0 2px #4338ca, 0 0 0 2px inset;
+  box-shadow: 0 0 0 2px var(--primary-dark), 0 0 0 2px inset;
 }
 .primary:focus-visible {
-  box-shadow: 0 0 0 2px #4338ca, 0 0 0 2px inset;
+  box-shadow: 0 0 0 2px var(--primary-dark), 0 0 0 2px inset;
 }
 
 .secondary {
-  background-color: #595f63;
-  color: #fff;
+  background-color: var(--secondary);
+  color: var(--text-color);
 }
 .secondary:hover {
-  background-color: #404548;
+  background-color: var(--secondary-dark);
 }
 .secondary:focus {
-  box-shadow: 0 0 0 2px #404548, 0 0 0 2px inset;
+  box-shadow: 0 0 0 2px var(--secondary-dark), 0 0 0 2px inset;
 }
 .secondary:focus-visible {
-  box-shadow: 0 0 0 2px #404548, 0 0 0 2px inset;
+  box-shadow: 0 0 0 2px var(--secondary-dark), 0 0 0 2px inset;
 }
 
 .success {
-  background-color: #059669;
-  color: #fff;
+  background-color: var(--success);
+  color: var(--text-color);
 }
 .success:hover {
-  background-color: #047857;
+  background-color: var(--success-dark);
 }
 .success:focus {
-  box-shadow: 0 0 0 2px #047857, 0 0 0 2px inset;
+  box-shadow: 0 0 0 2px var(--success-dark), 0 0 0 2px inset;
 }
 .success:focus-visible {
-  box-shadow: 0 0 0 2px #047857, 0 0 0 2px inset;
+  box-shadow: 0 0 0 2px var(--success-dark), 0 0 0 2px inset;
 }
 
 .danger {
-  background-color: #ef4444;
-  color: #fff;
+  background-color: var(--danger);
+  color: var(--text-color);
 }
 .danger:hover {
-  background-color: #dc2626;
+  background-color: var(--danger-dark);
 }
 .danger:focus {
-  box-shadow: 0 0 0 2px #dc2626, 0 0 0 2px inset;
+  box-shadow: 0 0 0 2px var(--danger-dark), 0 0 0 2px inset;
 }
 .danger:focus-visible {
-  box-shadow: 0 0 0 2px #dc2626, 0 0 0 2px inset;
+  box-shadow: 0 0 0 2px var(--danger-dark), 0 0 0 2px inset;
 }
 
 .warning {
-  background-color: #f7c244;
-  color: #fff;
+  background-color: var(--warning);
+  color: var(--text-color);
 }
 .warning:hover {
-  background-color: #bb9232;
+  background-color: var(--warning-dark);
 }
 .warning:focus {
-  box-shadow: 0 0 0 2px #bb9232, 0 0 0 2px inset;
+  box-shadow: 0 0 0 2px var(--warning-dark), 0 0 0 2px inset;
 }
 .warning:focus-visible {
-  box-shadow: 0 0 0 2px #bb9232, 0 0 0 2px inset;
+  box-shadow: 0 0 0 2px var(--warning-dark), 0 0 0 2px inset;
 }
