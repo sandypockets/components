@@ -2,9 +2,13 @@
   "name": "@sandypockets/components",
   "description": "A React component library",
   "author": "sandypockets",
-  "keywords": ["react", "components", "ui"],
+  "keywords": [
+    "react",
+    "components",
+    "ui"
+  ],
   "license": "MIT",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -23,8 +27,17 @@
     "@babel/core": "^7.13.14",
     "@babel/preset-env": "^7.13.12",
     "@babel/preset-react": "^7.16.7",
+    "@storybook/addon-actions": "^6.4.19",
+    "@storybook/addon-essentials": "^6.4.19",
+    "@storybook/addon-interactions": "^6.4.19",
+    "@storybook/addon-links": "^6.4.19",
+    "@storybook/node-logger": "^6.4.19",
+    "@storybook/preset-create-react-app": "^3.2.0",
+    "@storybook/react": "^6.4.19",
+    "@storybook/testing-library": "^0.0.9",
     "eslint": "^8.11.0",
     "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-storybook": "^0.5.7",
     "prettier": "2.5.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -35,12 +48,24 @@
     "test": "react-scripts test",
     "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files",
     "lint": "yarn prettier --write ./src && yarn run eslint ./src",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
     ]
   },
   "browserslist": {
@@ -54,5 +79,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandypockets/components.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sandypockets/components/issues"
+  },
+  "homepage": "https://github.com/sandypockets/components#readme"
 }
