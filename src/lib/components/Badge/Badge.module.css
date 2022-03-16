@@ -1,0 +1,35 @@
+@import '../../global.css';
+
+.badge {
+  padding: 5px 15px;
+  border-radius: 15px;
+  border: transparent;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  font-size: 12px;
+  font-family: var(--font-family);
+}
+
+.primary {
+  background-color: var(--primary);
+  color: var(--text-color);
+}
+
+.secondary {
+  background-color: var(--secondary);
+  color: var(--text-color);
+}
+
+.success {
+  background-color: var(--success);
+  color: var(--text-color);
+}
+
+.danger {
+  background-color: var(--danger);
+  color: var(--text-color);
+}
+
+.warning {
+  background-color: var(--warning);
+  color: var(--text-color);
+}

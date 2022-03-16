@@ -1,3 +1,4 @@
+import Badge from './components/Badge/Badge';
 import Button from './components/Button/Button';
 
-export { Button };
+export { Badge, Button };

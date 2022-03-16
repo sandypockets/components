@@ -47,6 +47,7 @@ export default function MyComponent() {
 
 
 ## Current components
+- Badge
 - Button
 
 ## Live demo
