@@ -1,0 +1,17 @@
+@import '../../global.css';
+
+.avatar:hover {
+  transform: translateY(-30%);
+  transition: all 300ms ease-in-out 25ms;
+}
+
+.avatar {
+  display: inline-grid;
+  transition: all 200ms ease-in-out 50ms;
+  position: relative;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
