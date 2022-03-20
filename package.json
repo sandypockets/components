@@ -9,7 +9,7 @@
     "component library"
   ],
   "license": "MIT",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -17,8 +17,7 @@
     "dist"
   ],
   "dependencies": {
-    "@babel/polyfill": "^7.12.1",
-    "web-vitals": "^1.0.1"
+    "@babel/polyfill": "^7.12.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.13.14",
@@ -42,7 +41,8 @@
     "prettier": "2.5.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3"
+    "react-scripts": "4.0.3",
+    "web-vitals": "^1.0.1"
   },
   "peerDependencies": {
     "react": "^17.0.2",
@@ -51,7 +51,7 @@
   "scripts": {
     "start": "react-scripts start",
     "test": "react-scripts test",
-    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files",
+    "build": "yarn lint && rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files",
     "lint": "yarn prettier --write ./src && yarn run eslint ./src",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
