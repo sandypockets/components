@@ -5,10 +5,11 @@
   "keywords": [
     "react",
     "components",
-    "ui"
+    "ui",
+    "component library"
   ],
   "license": "MIT",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.js",

@@ -1,10 +1,17 @@
 import React from 'react';
 import styles from './TextArea.module.css';
 
-export default function TextArea({ name, label, state, setState }) {
+export default function TextArea({
+  name,
+  label,
+  state,
+  setState,
+  textAreaInlineStyle,
+  labelInlineStyle,
+}) {
   return (
     <div>
-      <label htmlFor={name} className={styles.label}>
+      <label htmlFor={name} className={styles.label} style={labelInlineStyle}>
         {label}
       </label>
       <div className={styles.container}>
@@ -15,6 +22,7 @@ export default function TextArea({ name, label, state, setState }) {
           className={styles.textArea}
           defaultValue={state}
           onChange={(e) => setState(e.target.value)}
+          style={textAreaInlineStyle}
         />
       </div>
     </div>
