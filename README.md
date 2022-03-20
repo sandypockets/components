@@ -56,6 +56,7 @@ export default function MyComponent() {
 - Avatar group
 - Badge
 - Button
+- Text area
 
 ## Live demo
 Check out the [demo on StackBlitz](https://stackblitz.com/edit/react-uyja8n?file=src/App.js)
