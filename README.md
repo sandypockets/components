@@ -56,6 +56,7 @@ export default function MyComponent() {
 - Avatar group
 - Badge
 - Button
+- Modal
 - Text area
 
 ## Live demo
