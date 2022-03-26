@@ -55,7 +55,6 @@
 .closeButtonAnimation {
   transition: all 0.2s ease-in-out;
   animation: closeButtonSpinOut 150ms linear;
-
 }
 .closeButtonAnimation:hover {
   animation: closeButtonSpinIn 150ms linear;

@@ -9,7 +9,7 @@
     "component library"
   ],
   "license": "MIT",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.js",
